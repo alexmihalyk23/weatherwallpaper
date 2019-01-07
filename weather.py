@@ -26,16 +26,16 @@ while True:
         json_data = requests.get(url).json()
         format_add = json_data['weather'][0]['main']
         if format_add == 'Snow':
-            os.system("gsettings set org.gnome.desktop.background picture-uri file:///home/alex/Snow.jpg")
+            os.system("gsettings set org.gnome.desktop.background picture-uri file:///home/$USER/Snow.jpg")
             time.sleep(5)
         elif format_add == 'Clear':
-            os.system("gsettings set org.gnome.desktop.background picture-uri file:///home/alex/Clear.jpg")
+            os.system("gsettings set org.gnome.desktop.background picture-uri file:///home/$USER/Clear.jpg")
             time.sleep(5) #1800
         elif format_add == 'Clouds':
-            os.system("gsettings set org.gnome.desktop.background picture-uri file:///home/alex/Clouds.jpg")
+            os.system("gsettings set org.gnome.desktop.background picture-uri file:///home/$USER/Clouds.jpg")
             time.sleep(5)
         else:
-            os.system("gsettings set org.gnome.desktop.background picture-uri file:///home/alex/dark.png")
+            os.system("gsettings set org.gnome.desktop.background picture-uri file:///home/$USER/dark.png")
             time.sleep(5)
     else:
-        os.system("gsettings set org.gnome.desktop.background picture-uri file:///home/alex/dark.png")
+        os.system("gsettings set org.gnome.desktop.background picture-uri file:///home/$USER/dark.png")
