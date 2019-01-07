@@ -1,1 +1,2 @@
 # weatherwallpaper
+![Screenshot](screenshot.png)
